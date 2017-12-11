@@ -2,6 +2,18 @@ api_platform:
     swagger:
          api_keys:
              - { name: 'Authorization', type: 'header' }
+    collection:
+        order: 'DESC'
+        order_parameter_name: 'o'
+        pagination:
+            enabled: true
+            client_enabled: true
+            client_items_per_page: true
+            items_per_page: 17
+            maximum_items_per_page: 99
+            page_parameter_name: 'p'
+            enabled_parameter_name: 'ep'
+            items_per_page_parameter_name: 'i'
     mapping:
         paths:
             - '%kernel.project_dir%/src/Component/User'
