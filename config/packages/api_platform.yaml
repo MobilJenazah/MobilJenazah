@@ -1,0 +1,9 @@
+api_platform:
+    swagger:
+         api_keys:
+             - { name: 'Authorization', type: 'header' }
+    mapping:
+        paths:
+            - '%kernel.project_dir%/src/Component/User'
+            - '%kernel.project_dir%/src/Component/Organization'
+            - '%kernel.project_dir%/src/Component/Vehicle'
